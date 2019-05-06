@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang='en'>
+
+  <head>
+    <!-- page meta -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <!-- content meta -->
+    <title>fcc-survey-form</title>
+    <meta name='description' content=''>
+    <meta name='author' content=''>
+    <!-- css -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/index.css'>
+  </head>
+
+  <body>
+    <!-- body -->
+    <main id='main'>
+      <div class='container'>
+        <div class='card my-4'>
+          <div class='card-header text-center'>
+            <h1 id='title'>Survey Form</h1>
+            <p id='description' class='mb-0'><em>Let us know how we can improve freeCodeCamp</em></p>
+          </div>
+          <div class='card-body px-md-5'>
+            <form id='survey-form' method='GET' action='https://crossorigin.me/https://freecodecamp.com'>
+              <div class='form-group row'>
+                <label id='name-label' for='name' class='col-md-4 col-form-label'>Name</label>
+                <div class='col-md-8'>
+                  <input type='text' id='name' class='form-control' name='name' placeholder='Enter your name' required>
+                </div>
+              </div>
+              <div class='form-group row'>
+                <label id='email-label' for='email' class='col-md-4 col-form-label'>Email</label>
+                <div class='col-md-8'>
+                  <input type='email' id='email' class='form-control' name='email' placeholder='Enter your email' required>
+                </div>
+              </div>
+              <div class='form-group row'>
+                <label id='number-label' for='number' class='col-md-4 col-form-label'>Age</label>
+                <div class='col-md-8'>
+                  <input type='number' id='number' class='form-control' name='age' placeholder='Enter your age' min='1' max='125' required>
+                </div>
+              </div>
+              <div class='form-group row'>
+                <label for='dropdown' class='col-md-4 col-form-label'>Which option best describes your current role?</label>
+                <div class='col-md-8'>
+                  <select id='dropdown' class='form-control' name='currentPos'>
+                    <option disabled value>Select an option</option>
+                    <option value='student'>Student</option>
+                    <option value='job'>Full Time Job</option>
+                    <option value='learner'>Full Time Learner</option>
+                    <option value='preferNo'>Prefer not to say</option>
+                    <option value='other'>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class='form-group row'>
+                <label for='form-rating' class='col-md-4 col-form-label'>How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <div id='form-rating' class='col-md-8'>
+                  <div class='form-check'>
+                    <input id='form-rating-1' class='form-check-input' type='radio' name='radio-buttons' value='1' required>
+                    <label class='form-check-label' for='form-rating-1'>Definitely</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-rating-2' class='form-check-input' type='radio' name='radio-buttons' value='2' required>
+                    <label class='form-check-label' for='form-rating-2'>Maybe</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-rating-3' class='form-check-input' type='radio' name='radio-buttons' value='3' required>
+                    <label class='form-check-label' for='form-rating-3'>Not Sure</label>
+                  </div>
+                </div>
+              </div>
+              <div class='form-group row'>
+                <label for='form-like' class='col-md-4 col-form-label'>What do you like most in FCC?</label>
+                <div class='col-md-8'>
+                  <select id='form-like' class='form-control' name='mostLike'>
+                    <option disabled selected value>Select an option</option>
+                    <option value='challenges'>Challenges</option>
+                    <option value='projects'>Projects</option>
+                    <option value='community'>Community</option>
+                    <option value='openSource'>Open</option>
+                  </select>
+                </div>
+              </div>
+              <div class='form-group row'>
+                <label for='form-prefer' class='col-md-4 col-form-label'>Things that should be improved in the future (Check all that apply)</label>
+                <div id='form-prefer' class='col-md-8'>
+                  <div class='form-check'>
+                    <input id='form-prefer-1' class='form-check-input' type='checkbox' name='prefer' value='1'>
+                    <label class='form-check-label' for='form-prefer-1'>Front-end Projects</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-2' class='form-check-input' type='checkbox' name='prefer' value='2'>
+                    <label class='form-check-label' for='form-prefer-2'>Back-end Projects</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-3' class='form-check-input' type='checkbox' name='prefer' value='3'>
+                    <label class='form-check-label' for='form-prefer-3'>Data Visualization</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-4' class='form-check-input' type='checkbox' name='prefer' value='4'>
+                    <label class='form-check-label' for='form-prefer-4'>Challenges</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-5' class='form-check-input' type='checkbox' name='prefer' value='5'>
+                    <label class='form-check-label' for='form-prefer-5'>Open Source Community</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-6' class='form-check-input' type='checkbox' name='prefer' value='6'>
+                    <label class='form-check-label' for='form-prefer-6'>Gitter help rooms</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-7' class='form-check-input' type='checkbox' name='prefer' value='7'>
+                    <label class='form-check-label' for='form-prefer-7'>Videos</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-8' class='form-check-input' type='checkbox' name='prefer' value='8'>
+                    <label class='form-check-label' for='form-prefer-8'>City Meetups</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-9' class='form-check-input' type='checkbox' name='prefer' value='9'>
+                    <label class='form-check-label' for='form-prefer-9'>Wiki</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-10' class='form-check-input' type='checkbox' name='prefer' value='10'>
+                    <label class='form-check-label' for='form-prefer-10'>Forum</label>
+                  </div>
+                  <div class='form-check'>
+                    <input id='form-prefer-11' class='form-check-input' type='checkbox' name='prefer' value='11'>
+                    <label class='form-check-label' for='form-prefer-11'>Additional Courses</label>
+                  </div>
+                </div>
+              </div>
+              <div class='form-group row'>
+                <label for='form-comment' class='col-md-4 col-form-label'>Any Comments or Suggestions?</label>
+                <div class='col-md-8'>
+                  <textarea id='form-comment' class='form-control' name='comment' rows='3' placeholder='Enter your comment here...'></textarea>
+                </div>
+              </div>
+              <button id='submit' class='btn btn-primary btn-block' type='submit'>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <foot>
+    <!-- script -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='js/index.js'></script>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+  </foot>
+
+</html>
